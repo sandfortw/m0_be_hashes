@@ -11,6 +11,10 @@ states = {
 #
 #
 #
+states.each do |state, st|
+  p "Here is a state: #{state}, #{st}."
+end
+
 
 
 # ======================================
@@ -27,6 +31,9 @@ birthdays = {
 #
 #
 #
+birthdays.each do |name, date|
+  p "Today is #{date}! Happy birthday #{name}!"
+end
 
 
 # ======================================
@@ -38,6 +45,12 @@ login_statuses = {
   "Amos" => true,
   "Jeff" => true
 }
+
+login_statuses.each do |name, status|
+  if status
+    p name
+  end
+end
 
 # Use the each method to iterate through it and print ONLY the names of friends who are "logged in"
 #
